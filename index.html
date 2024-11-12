@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      .dashboard {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      .total-row {
+        font-weight: bold;
+      }
+      .summary-table {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h2>Leave Dashboard</h2>
+      <table id="leaveTable">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>CL</th>
+            <th>PL</th>
+          </tr>
+        </thead>
+        <tbody id="leaveData"></tbody>
+        <tfoot>
+          <tr class="total-row">
+            <td>Total</td>
+            <td id="totalCL">0</td>
+            <td id="totalPL">0</td>
+          </tr>
+        </tfoot>
+      </table>
+      <table class="summary-table">
+        <tr>
+          <th>Leave</th>
+          <th>CL</th>
+          <th>PL</th>
+        </tr>
+        <tr>
+          <th></th>
+          <td>8</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+        <tr class="total-row">
+          <th>Total</th>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      // Dynamic data for leaves
+      const leaveData = [
+        { month: "May", CL: 0, PL: 0 },
+        { month: "June", CL: 3, PL: 0 },
+        { month: "July", CL: 0, PL: 3 },
+        { month: "August", CL: 1, PL: 0 },
+        { month: "September", CL: 0, PL: 0 },
+        { month: "October", CL: 0, PL: 0 },
+        { month: "November", CL: 0, PL: 0 },
+        { month: "December", CL: 0, PL: 0 },
+      ];
+
+      // Function to render the leave data dynamically
+      function renderLeaveData() {
+        const leaveTableBody = document.getElementById("leaveData");
+        let totalCL = 0;
+        let totalPL = 0;
+
+        leaveData.forEach((entry) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+                    <td>${entry.month}</td>
+                    <td>${entry.CL}</td>
+                    <td>${entry.PL}</td>
+                `;
+          leaveTableBody.appendChild(row);
+
+          totalCL += entry.CL;
+          totalPL += entry.PL;
+        });
+
+        // Update totals
+        document.getElementById("totalCL").textContent = totalCL;
+        document.getElementById("totalPL").textContent = totalPL;
+      }
+
+      // Call the function to render data when the page loads
+      renderLeaveData();
+    </script>
+  </body>
+</html>
