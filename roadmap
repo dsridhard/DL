@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Month Learning Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        .month {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e4e4e9;
+            border-radius: 8px;
+        }
+        .week {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .day {
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #35424a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>3-Month Learning Plan</h1>
+        <p>Starting January 5, 2025</p>
+    </header>
+    <div class="container">
+        <div class="month">
+            <h2>Month 1: SQL, Java with Spring Boot, Python, DSA Basics, and UPSC Preparation</h2>
+            <div class="week">
+                <h3>Week 1</h3>
+                <div class="day">January 5: SQL Basics (DDL, DML, constraints) + Learn Array basics in DSA + Read about Indian History (Ancient India)</div>
+                <div class="day">January 6: SQL Joins (INNER, LEFT, RIGHT) + Solve simple Array problems + Study Indian Polity (Constitution basics)</div>
+                <div class="day">January 7: SQL Subqueries + Learn basic Sorting algorithms (Bubble, Selection) + Read Geography (Physical features of India)</div>
+                <div class="day">January 8: SQL Functions (String, Numeric) + Practice Sorting problems + Study Current Affairs (Daily News)</div>
+                <div class="day">January 9: SQL Aggregation + Learn Linked List (Singly Linked List) + Read History (Medieval India)</div>
+                <div class="day">January 10: Practice SQL + Implement Linked List operations + Study Indian Polity (Fundamental Rights)</div>
+                <div class="day">January 11: Solve problems involving Linked List and SQL queries + Read Geography (Climatic regions of India)</div>
+            </div>
+            <div class="week">
+                <h3>Week 2</h3>
+                <div class="day">January 12: Java Basics (OOPs, exception handling) + Learn Stack and its applications + Study History (Modern India)</div>
+                <div class="day">January 13: Learn Java Collections + Solve Stack problems + Read Indian Polity (Union Government)</div>
+                <div class="day">January 14: Spring Boot setup + Learn Queue and Priority Queue + Study Geography (Indian Rivers)</div>
+                <div class="day">January 15: Build a simple Spring Boot app + Solve Queue problems + Study Current Affairs (Daily News)</div>
+                <div class="day">January 16: REST APIs in Spring Boot + Learn Recursion basics + Read History (Freedom Struggle)</div>
+                <div class="day">January 17: CRUD operations in Spring Boot + Solve Recursion problems + Study Polity (State Government)</div>
+                <div class="day">January 18: Review Java and Spring Boot + Practice DSA problems + Read Geography (Soil types in India)</div>
+            </div>
+            <!-- Add more weeks for Month 1 -->
+        </div>
+
+        <div class="month">
+            <h2>Month 2: Docker, Angular, Intermediate DSA, and UPSC</h2>
+            <div class="week">
+                <h3>Week 1</h3>
+                <div class="day">February 2: Docker Basics (Images, Containers) + Learn Greedy algorithms + Study Current Affairs (Daily News)</div>
+                <div class="day">February 3: Dockerfile and build custom images + Solve Greedy problems + Read History (Indian Economy post-1991)</div>
+                <div class="day">February 4: Docker Compose + Learn Dynamic Programming basics (Knapsack) + Study Polity (Panchayati Raj)</div>
+                <div class="day">February 5: Deploy a Spring Boot app with Docker + Solve Knapsack problems + Read Geography (Industrial locations in India)</div>
+                <div class="day">February 6: Docker networking and volumes + Learn DP on Strings (LCS, LPS) + Study Current Affairs (Daily News)</div>
+                <div class="day">February 7: Practice Docker concepts + Solve String DP problems + Read History (Globalization and its impact)</div>
+                <div class="day">February 8: Review Docker + Practice Greedy and DP problems + Study Polity (Federal structure in India)</div>
+            </div>
+            <!-- Add more weeks for Month 2 -->
+        </div>
+
+        <div class="month">
+            <h2>Month 3: Advanced Topics, Capstone Projects, Advanced DSA, and UPSC</h2>
+            <div class="week">
+                <h3>Week 1</h3>
+                <div class="day">March 2: Advanced SQL (Triggers, Stored Procedures) + Learn Graph Algorithms (Shortest Path, MST) + Read History (World Economy)</div>
+                <div class="day">March 3: Optimize SQL queries + Solve Graph Algorithm problems + Study Polity (Role of CAG and EC)</div>
+                <div class="day">March 4: Practice SQL + Learn Disjoint Set Union (DSU) + Read Geography (Biodiversity conservation)</div>
+                <div class="day">March 5: Design a database schema + Solve DSU problems + Study Current Affairs (Daily News)</div>
+                <div class="day">March 6: Write stored procedures + Practice advanced DSA problems + Read History (Indian cultural heritage)</div>
+                <div class="day">March 7: Debug SQL and optimize queries + Solve competitive coding questions + Study Polity (Citizen-centric governance)</div>
+                <div class="day">March 8: Review SQL concepts + Practice DSA + Study Geography (Environmental issues)</div>
+            </div>
+            <!-- Add more weeks for Month 3 -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Learning Plan</p>
+    </footer>
+</body>
+</html>
